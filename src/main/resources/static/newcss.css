@@ -1,0 +1,58 @@
+html, body, h1, h2, h3, h4 {
+    font-family: "Lato", sans-serif
+}
+
+.mySlides {
+    display: none
+}
+
+.w3-tag, .fa {
+    cursor: pointer
+}
+
+.w3-tag {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-top: 6px
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+.mycontainer {
+    background-color: whitesmoke;
+    margin-top: 50px;
+  /*  border-radius: 20px;*/
+    height: 320px;
+    width: auto;
+    position: relative;
+    opacity: 0.95;
+}
+.center {
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centertekst{
+    text-align: center;
+}
+.col{
+    margin: 10px;
+    padding: 5px;"
+}
+.mynavigator{
+    background-color: lightgray;
+}
+body, h1 {
+    font-family: "Raleway", Arial, sans-serif
+}
+
+h1 {
+    letter-spacing: 6px
+}

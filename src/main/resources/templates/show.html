@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title> Add Task </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    ​
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="newcss.css">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    ​
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    ​
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+​
+
+<div class="w3-content" style="max-width:1500px">
+
+</div>
+​
+
+​
+​
+
+​<nav class="mynavigator">
+<div class="w3-top">
+    <div class="w3-row w3-large w2-black">
+        <div class="w3-col s4">
+            <a href="/main" class="w3-button w3-block">Home</a>
+        </div>
+        <div class="w3-col s4">
+            <a href="/" class="w3-button w3-block">Add Task</a>
+        </div>
+        <div class="w3-col s4">
+            <a href="/list" class="w3-button w3-block">Task list</a>
+        </div>
+        ​
+    </div>
+</div>
+</nav>
+<main role="main" class="container">
+
+    <div class="container">
+        <div class="w3-card w3-margin ">
+            <div class="w3-container w3-padding">
+                <h4>All tasks:</h4>
+            </div>
+            <table class="" >
+            <tr th:each="thing: ${toDo}" class="w3-ul w3-hoverable w3-white">
+                <td class="col ">
+                    <span >[[${thing}]] </span>
+                </td>
+                <td class="col" >
+                    <a th:href="'/list/'+${thing.id}"> <input class=" btn btn-outline-secondary myfont mymargin "
+                                                              type="submit" value="Description"></a>
+                </td>
+                <td class="col">
+                    <a th:href="'/list/'+${thing.id}+'/delete'"><input type="submit"
+                                                                       class=" btn btn-outline-secondary myfont mymargin"
+                                                                       value="Delete"></a>
+                </td>
+                <td class="col">
+                    <label class="myfont mymargin">Done?</label>
+                    <input name="*{done}" method="post" type="checkbox" th:id="${thing.id}">
+                </td>
+            </tr>
+            </table>
+        </div>
+    </div>
+    ​
+
+</main><!-- /.container -->
+​
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large footer">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+​
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+​<script  src="/checkbox.js"></script>
+</body>
+</html>

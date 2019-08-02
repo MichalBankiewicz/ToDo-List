@@ -1,0 +1,62 @@
+body {
+    padding-top: 5rem;
+}
+.centertekst{
+    text-align: center;
+}
+.center{
+    place-items: center;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.inline{
+    display: inline;
+}
+.ramka{
+    padding: 5px 0px 5px 0px;
+   /* margin: 15px 0px 15px 0px;*/
+
+}
+.srodek{
+    text-align: center;
+}
+
+body{
+   background-color: darkgrey;
+    opacity: 0.90;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed
+}
+
+.kolor{
+    background-color: black;
+}
+.mycontainer{
+    background-color: whitesmoke;
+    margin-top: 100px;
+    border-radius: 20px;
+    height: 320px;
+    width: auto;
+    position: relative;
+    opacity: 0.95;
+}
+.center-button{
+   display: inline-flex;
+}
+.myfont{
+    font-family: "Lato", sans-serif;
+}
+.mycontainer1{
+    position: relative;
+    background-color: honeydew;
+    margin-top: 100px;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    opacity: 0.95;
+}
+.mymargin{
+    margin: 20px;
+}
