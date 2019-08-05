@@ -13,12 +13,12 @@ public class ToDoController {
 
     @Autowired
     private ToDoRepository toDoRepository;
-    @GetMapping("/main")
+    @GetMapping("/")
     public String main(){
         return "main";
     }
 
-    @GetMapping("/")
+    @GetMapping("/main")
     public String home(ModelMap map) {
         map.put("todo", toDoRepository.findAll());
         map.put("thing", new ToDo());
